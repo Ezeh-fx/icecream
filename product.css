@@ -1,0 +1,558 @@
+*{
+    margin: 0;
+    padding: 0;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(255, 248, 236);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: hidden;
+    @media only screen and (max-width: 1000px) {
+        background-color: antiquewhite;
+    }
+   
+}
+.logo-header{
+    width: 40%;
+    height: inherit;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 60px;
+    img{
+        object-fit: contain;
+        cursor: pointer;
+     }
+     @media only screen and (max-width: 1000px) {
+        display: none;
+    }
+}
+
+.header-button{
+    width: 25%;
+    height: inherit;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    button{
+        width: 40%;
+        height: 50%;
+        border: none;
+        background-color: transparent;
+        font-size: large;
+        cursor: pointer;
+        transition: all ease-in 10ms;
+        overflow-x: hidden;
+        color: #001C49;
+        &:hover{
+            color: #00BAD5;
+            text-decoration: underline;
+        }
+    }
+    @media only screen and (max-width: 1000px) {
+        display: none;
+      }
+}
+
+.main-header{
+    width: 85%;
+    height: 9vh;
+    background-color: #FFF8EC;
+    border-radius: 20px;
+    position: absolute;
+    position: fixed;
+    top: 130px;
+    left: 110px;
+    z-index: 999;
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    @media only screen and (max-width: 1000px) {
+        width: 70%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        position: absolute;
+        box-shadow: none;
+        top: 40px;
+        left: 75px;
+        margin: auto;
+    }
+}
+.frist-head{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 40px;
+        li{
+            cursor: pointer;
+            font-size: larger;
+            color: #001C49;
+            &:hover{
+                color: #00BAD5;
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+    @media only screen and (max-width: 1000px) {
+        display: none;
+    }
+}
+.img-head{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        object-fit: cover;
+        cursor: pointer;
+        @media only screen and (max-width: 1000px) {
+           width: 90%;
+        }
+    }
+}
+.second-head{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 40px;
+        li{
+            cursor: pointer;
+            font-size: larger;
+            color: #001C49;
+            &:hover{
+                color: #00BAD5;
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+    img{
+        object-fit: contain;
+        cursor: pointer;
+    }
+    @media only screen and (max-width: 1000px) {
+        display: none;
+    }
+}
+
+
+.hero-header{
+    width: 100%;
+    height: 90vh;
+    background-color: #E2F6FA;
+    display: flex;
+   overflow: hidden;
+   @media only screen and (max-width: 1000px) {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+    
+}
+.hero-text{
+    width: 50%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    @media only screen and (max-width: 1000px) {
+        width: 100%;
+      }
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    h3{
+        color: #001C49;
+    }
+    h1{
+        font-size: 4rem;
+        color: #001C49;
+    }
+    button{
+        width: 50%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        border: none;
+        background-color: #001C49;
+        color: white;
+        font-size: x-large;
+        cursor: pointer;
+        &:hover{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        @media only screen and (max-width: 1000px) {
+            width: 50%;
+            height: 80px;
+            border-radius: 10px;
+          }
+    }
+    @media only screen and (max-width: 1000px) {
+        width: 100%;
+        display: flex;
+        margin-left: 10px;
+        margin-top: 20px;
+      }
+}
+
+.hero-img{
+    width: 60%;
+    height: inherit;
+    border-bottom-left-radius: 90px;
+    img{
+        object-fit: cover;
+        border-bottom-left-radius: 90px;
+        @media only screen and (max-width: 1000px) {
+            /* margin-top: 20px; */
+            width: 100%;
+          }
+    }
+    @media only screen and (max-width: 1000px) {
+        width: 100%;
+      }
+}
+
+
+.first-product{
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        justify-content: flex-start;
+      }
+}
+.frist-comtent{
+    width: 30%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media only screen and (max-width: 800px) {
+         width: 70%;
+         margin-bottom: 20px;
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         gap: 20px;
+      }
+    h1{
+        font-size: xx-large;
+        color: #001C49;
+    }
+    button{
+        width: fit-content;
+        height: fit-content;
+        background-color: transparent;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        font-size: large;
+        color: #001C49;
+        border: none;
+        &:hover{
+            text-decoration: underline;
+            color: #00BAD5;
+        }
+        @media only screen and (max-width: 1000px) {
+            width: fit-content;
+          }
+    }
+   
+}
+.frist-img{
+    width: 100%;
+    height: 80%;
+    border-bottom-right-radius: 70px;
+    overflow: hidden;
+    img{
+        border-bottom-right-radius: 70px;
+        object-fit: cover;
+        transition: transform all ease-in 0.5s;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+        height: 70%;
+        }
+}
+.second-product{
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        justify-content: flex-start;
+      }
+}
+.second-comtent{
+    width: 30%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media only screen and (max-width: 800px) {
+         width: 70%;
+         margin-bottom: 20px;
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         gap: 20px;
+      }
+    h1{
+        font-size: xx-large;
+        color: #001C49;
+    }
+    button{
+        width: fit-content;
+        height: fit-content;
+        background-color: transparent;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        font-size: large;
+        color: #001C49;
+        border: none;
+        &:hover{
+            text-decoration: underline;
+            color: #00BAD5;
+        }
+        @media only screen and (max-width: 1000px) {
+            width: fit-content;
+          }
+    }
+   
+}
+.second-img{
+    width: 100%;
+    height: 80%;
+    border-bottom-right-radius: 70px;
+    overflow: hidden;
+    img{
+        border-bottom-right-radius: 70px;
+        object-fit: cover;
+        transition: transform all ease-in 0.5s;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+        height: 70%;
+        }
+}
+
+.third-product{
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        justify-content: flex-start;
+      }
+}
+.third-comtent{
+    width: 30%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media only screen and (max-width: 800px) {
+         width: 70%;
+         margin-bottom: 20px;
+         height: fit-content;
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         gap: 20px;
+      }
+    h1{
+        font-size: xx-large;
+        color: #001C49;
+    }
+    button{
+        width: fit-content;
+        height: fit-content;
+        background-color: transparent;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        font-size: large;
+        color: #001C49;
+        border: none;
+        &:hover{
+            text-decoration: underline;
+            color: #00BAD5;
+        }
+        @media only screen and (max-width: 1000px) {
+            width: fit-content;
+          }
+    }
+   
+}
+.third-img{
+    width: 100%;
+    height: 80%;
+    border-bottom-right-radius: 70px;
+    overflow: hidden;
+    img{
+        border-bottom-right-radius: 70px;
+        object-fit: cover;
+        transition: transform all ease-in 0.5s;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+        height: 70%;
+        }
+}
+
+
+footer{
+    width: 100%;
+    height: 90vh;
+    background-color: #001C49;
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+        height: fit-content;
+        }
+ }
+ .footer-content{
+     width: 95%;
+     height: 80%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     margin-left: 30px;
+     border-bottom: 2px solid #00BAD5;
+     overflow-x: hidden;
+     img{
+        cursor: pointer;
+        @media only screen and (max-width: 800px) {
+           width: 30%;
+        } 
+     }
+     ul{
+         list-style: none;
+         display: flex;
+         gap: 20px;
+        li{
+            width: fit-content;
+             cursor: pointer;
+             color: white;
+             font-size: larger;
+             &:hover{
+                text-decoration: underline;
+                color: #00BAD5;
+             }
+        }
+        @media only screen and (max-width: 800px) {
+                display: flex;
+                flex-direction: column;
+            } 
+     }
+     @media only screen and (max-width: 800px) {
+        gap: 50px;
+           margin-left: 0;
+           overflow-x: hidden;
+           margin-bottom: 20px;
+        }
+ }
+.content2{
+    width: 95%;
+    height: 19%;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 20px;
+       li{
+            width: fit-content;
+            cursor: pointer;
+            color: #00BAD5;
+            font-size: larger;
+       }
+       @media only screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+    } 
+    }
+    p{
+        color: white;
+    }
+    @media only screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        align-items: flex-start;
+        gap: 20px;
+    } 
+}

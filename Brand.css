@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(255, 248, 236);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: hidden;
+    @media only screen and (max-width: 1000px) {
+        background-color: antiquewhite;
+    }
+   
+}
+
+.logo-header{
+    width: 40%;
+    height: inherit;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 60px;
+    img{
+        object-fit: contain;
+        cursor: pointer;
+     }
+     @media only screen and (max-width: 1000px) {
+        display: none;
+    }
+}
+
+.header-button{
+    width: 25%;
+    height: inherit;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    button{
+        width: 40%;
+        height: 50%;
+        border: none;
+        background-color: transparent;
+        font-size: large;
+        cursor: pointer;
+        transition: all ease-in 10ms;
+        overflow-x: hidden;
+        color: #001C49;
+        &:hover{
+            color: #00BAD5;
+            text-decoration: underline;
+        }
+    }
+    @media only screen and (max-width: 1000px) {
+        display: none;
+      }
+}
+
+
+
+.main-holder{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+}
+.main-header{
+    width: 85%;
+    height: 9vh;
+    background-color: #FFF8EC;
+    border-radius: 20px;
+    position: absolute;
+    position: fixed;
+    top: 130px;
+    left: 110px;
+    z-index: 999;
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    @media only screen and (max-width: 1000px) {
+        width: 70%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        position: absolute;
+        box-shadow: none;
+        top: 40px;
+        left: 75px;
+        margin: auto;
+    }
+}
+.frist-head{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 40px;
+        li{
+            cursor: pointer;
+            font-size: larger;
+            color: #001C49;
+            &:hover{
+                color: #00BAD5;
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+    @media only screen and (max-width: 1000px) {
+        display: none;
+    }
+}
+.img-head{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        object-fit: cover;
+        cursor: pointer;
+        @media only screen and (max-width: 1000px) {
+           width: 90%;
+        }
+    }
+}
+.second-head{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 40px;
+        li{
+            cursor: pointer;
+            font-size: larger;
+            color: #001C49;
+            &:hover{
+                color: #00BAD5;
+            }
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+    img{
+        object-fit: contain;
+        cursor: pointer;
+    }
+    @media only screen and (max-width: 1000px) {
+        display: none;
+    }
+}
+
+
+.frist-comtent{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    h1{
+        margin-left: 50px;
+        color: #001C49;
+        font-size: 3rem;
+    }
+    @media only screen and (max-width: 1000px) {
+        display: flex;
+        height: fit-content;
+        flex-direction: column;
+    }
+}
+.frist-img{
+    width: 90%;
+    height: 85%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    @media only screen and (max-width: 1000px) {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+.img-container{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h1{
+        font-size: 3rem;
+        color: #001C49;
+        margin-left: 0;
+    }
+    p{
+        color: #001C49;
+    }
+    button{
+        width: fit-content;
+        height: fit-content;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: large;
+        color: #001C49;
+        border: none;
+        &:hover{
+            color: #00BAD5;
+        }
+    }
+    @media only screen and (max-width: 1000px) {
+        width: 100%;
+    }
+}
+.img{
+    width: 100%;
+    height: 70%;
+    border-bottom-right-radius: 70px;
+    cursor: pointer;
+    overflow: hidden;
+    img{
+        object-fit: cover;
+        border-bottom-right-radius: 70px;
+        transition: all ease-in 0.5s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    } 
+    @media only screen and (max-width: 1000px) {
+        width: 100%;
+    }  
+}
+
+
+.second-comtent{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    @media only screen and (max-width: 1000px) {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+}
+
+.content{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    button{
+        width: fit-content;
+        height: fit-content;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: large;
+        color: #001C49;
+        border: none;
+        &:hover{
+            color: #00BAD5;
+        }
+    }
+    @media only screen and (max-width: 1000px) {
+        width: 100%;
+    }
+}
+.more{
+    width: 100%;
+    height: 15vh;
+    border-bottom: 1px solid #001C49;
+    display: flex;
+    align-items: center;
+    h1{
+        font-size: 3rem;
+        color: #001C49;
+    }
+}
+.option{
+    width: 100%;
+    height: 15vh;
+    border-bottom: 1px solid #001C49;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    h1{
+        font-size: 2rem;
+        color: #001C49;
+    }
+}
+
+
+footer{
+    width: 100%;
+    height: 90vh;
+    background-color: #001C49;
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+        height: fit-content;
+        }
+ }
+ .footer-content{
+     width: 95%;
+     height: 80%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     margin-left: 30px;
+     border-bottom: 2px solid #00BAD5;
+     overflow-x: hidden;
+     img{
+        cursor: pointer;
+        @media only screen and (max-width: 800px) {
+           width: 30%;
+        } 
+     }
+     ul{
+         list-style: none;
+         display: flex;
+         gap: 20px;
+        li{
+            width: fit-content;
+             cursor: pointer;
+             color: white;
+             font-size: larger;
+             &:hover{
+                text-decoration: underline;
+                color: #00BAD5;
+             }
+        }
+        @media only screen and (max-width: 800px) {
+                display: flex;
+                flex-direction: column;
+            } 
+     }
+     @media only screen and (max-width: 800px) {
+        gap: 50px;
+           margin-left: 0;
+           overflow-x: hidden;
+           margin-bottom: 20px;
+        }
+ }
+.content2{
+    width: 95%;
+    height: 19%;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 20px;
+       li{
+            width: fit-content;
+            cursor: pointer;
+            color: #00BAD5;
+            font-size: larger;
+       }
+       @media only screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+    } 
+    }
+    p{
+        color: white;
+    }
+    @media only screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        align-items: flex-start;
+        gap: 20px;
+    } 
+}
